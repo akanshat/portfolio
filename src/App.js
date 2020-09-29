@@ -1,40 +1,47 @@
 import React from "react";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 
-import Navbar from "./component/navbar/navbar";
-import Projects from "./component/projects/projects";
-import About from "./component/about/about";
+import Navbar from "./components/navbar/navbar";
+import Home from "./components/home/home";
+import Projects from "./components/projects/projects";
+import About from "./components/about/about";
 
-import { Element } from "react-scroll";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Element name="home" className="element">
+    <Router>
+      <div className="App">
         <header className="App-header">
           <Navbar />
         </header>
-      </Element>
-      <div className="App-content">CONTENT</div>
-
-      <div className="projects-component-container">
-        <Element name="projects" className="element">
-          <Projects />
-        </Element>
+        <Switch>
+          <Route exact path="/">
+            <div className="App-content">
+              <Home />
+            </div>
+          </Route>
+          <Route exact path="/work">
+            <div className="projects-component-container">
+              <Projects />
+            </div>
+          </Route>
+          <Route exact path="/about">
+            <div className="about-component-container">
+              <About />
+            </div>
+          </Route>
+          <Route exact path="/contact">
+            <div className="projects-component-container">CONTACT</div>
+          </Route>
+          <Route path="*">
+            <div>
+              <h1>404</h1>
+            </div>
+          </Route>
+        </Switch>
       </div>
-      <div className="projects-component-container">
-        <Element name="about" className="element">
-          <About />
-        </Element>
-      </div>
-      <div className="projects-component-container">
-        <Element name="contact" className="element">
-          CONTACT
-        </Element>
-      </div>
-
-      <footer className="App-footer">Footer</footer>
-    </div>
+    </Router>
   );
 }
 

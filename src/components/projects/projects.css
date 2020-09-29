@@ -1,7 +1,29 @@
 .project-container {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+}
+
+.experience{
+  margin-top: 50px;
+  font-family: "Raleway", sans-serif;
+  color: #fff56c;
+  font-size: 7vh;
+  font-weight: 900;
+}
+
+.project-container h1 {
+  font-family: "Raleway", sans-serif;
+  color: #fff56c;
+  font-size: 7vh;
+  font-weight: 900;
+}
+
+.list-of-projects {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 
 .figure {
@@ -51,7 +73,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   content: "";
   opacity: 0;
-  background-color: #ffffff;
+  background-color: #c5c5c5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-transition-delay: 0.6s;
@@ -77,7 +99,6 @@
   transition-delay: 0.3s;
 }
 
-
 .figure p {
   font-weight: 200;
   -webkit-transition-delay: 0s;
@@ -101,6 +122,7 @@
   transform: translate3d(0%, 0%, 0);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
+  border-radius: 5px;
 }
 
 .figure:hover .figcaption p {

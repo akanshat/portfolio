@@ -14,7 +14,7 @@ import node from "../../assets/node-dot-js.svg";
 import psql from "../../assets/postgresql.svg";
 import react from "../../assets/react.svg";
 import reactrouter from "../../assets/reactrouter.svg";
-
+import redux from "../../assets/redux.svg"
 const Cards = () => {
   return (
     <div className="tech-cards">
@@ -31,6 +31,7 @@ const Cards = () => {
       <img className="image psql" alt="psql" src={psql} />
       <img className="image react" alt="react" src={react} />
       <img className="image reactrouter" alt="reactrouter" src={reactrouter} />
+      <img className="image redux" alt="redux" src={redux} />
     </div>
   );
 };

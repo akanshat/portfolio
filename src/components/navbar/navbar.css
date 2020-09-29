@@ -18,9 +18,10 @@
 }
 
 .logo-container {
+  outline: none;
   border-top: 2px solid #ff527c;
-  border-right: 2px solid #ff527c;
-  border-left: 1px solid #ff527c;
+  border-right: 1px solid #ff527c;
+  border-left: 2px solid #ff527c;
   border-bottom: 1px solid #ff527c;
   padding: 7px;
   font-weight: 900;
@@ -29,6 +30,7 @@
 }
 
 .navbar-contents {
+  text-decoration: none;
   color: white;
   margin-left: 40px;
   font-size: 2vh;
@@ -39,9 +41,30 @@
   font-family: "Raleway", Arial, sans-serif;
   cursor: pointer;
   margin: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-list a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+.logo{
+  color: #ff527c;
+}
+
+.logo a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 
 .navbar-list:hover {
+  text-decoration: none;
   color: #ff527c;
   border-bottom: 3px solid #ff527c;
   font-weight: 500;
@@ -66,6 +89,10 @@
   opacity: 0.4;
 }
 
-.navbar-right:hover > .social-media-icon:hover {
+.navbar-right:hover a > .social-media-icon {
+  opacity: 0.4;
+}
+
+.navbar-right:hover a > .social-media-icon:hover {
   opacity: 1;
 }

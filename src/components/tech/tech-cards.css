@@ -1,5 +1,5 @@
 .tech-cards {
-  padding: 30px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -8,13 +8,18 @@
 .image {
   margin: 30px;
   height: 8vh;
-  width: 4.5vw;
+  width: 4vw;
   align-self: center;
-  background-color: rgb(238, 176, 62);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .cpp {
   background-color: #00599c;
+}
+
+.image:hover {
+  cursor: pointer;
 }
 
 .css {
@@ -61,6 +66,10 @@
   background-color: #61dafb;
 }
 
-.reactrouter{
-    background-color: #ca4245;
+.reactrouter {
+  background-color: #ca4245;
+}
+
+.redux{
+  background-color: #764ABC;
 }

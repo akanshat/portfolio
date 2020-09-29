@@ -1,0 +1,16 @@
+.home-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  color: yellowgreen;
+  width: 50vw;
+}
+
+.cards {
+  width: 50vw;
+}

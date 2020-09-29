@@ -29,7 +29,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div class="figure">
+      <div className="figure">
         <img src={url} alt="url" />
         <div className="figcaption">
           <h2>

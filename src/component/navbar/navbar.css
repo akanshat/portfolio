@@ -1,65 +1,71 @@
 .navbar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 50px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  position: absolute;
+  z-index: 1;
+  width: 95vw;
 }
-.navbar-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-container {
-    border-top: 2px solid #ff527c;
-    border-right: 2px solid #ff527c;
-    border-left: 1px solid #ff527c;
-    border-bottom: 1px solid #ff527c;
-    padding: 7px;
-    font-weight: 900;
-    font-size: 20px;
-    cursor: pointer;
+  border-top: 2px solid #ff527c;
+  border-right: 2px solid #ff527c;
+  border-left: 1px solid #ff527c;
+  border-bottom: 1px solid #ff527c;
+  padding: 7px;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.navbar-contents{
-    color: white;
-    margin-left: 40px;
-    font-size: 2vh;
-    font-weight: 500;
+.navbar-contents {
+  color: white;
+  margin-left: 40px;
+  font-size: 2vh;
+  font-weight: 500;
 }
 
-.navbar-list{
-    font-family: "Raleway", Arial, sans-serif;
-    cursor: pointer;
-    margin: 1.5vw;
+.navbar-list {
+  font-family: "Raleway", Arial, sans-serif;
+  cursor: pointer;
+  margin: 1.5vw;
 }
 
-.navbar-list:hover{
-    color: #ff527c;
-    border-bottom: 3px solid #ff527c;
-    font-weight: 500;
+.navbar-list:hover {
+  color: #ff527c;
+  border-bottom: 3px solid #ff527c;
+  font-weight: 500;
 }
 
 /* #fff56c; */
 
-.navbar-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.social-media-icon{
-    height: 1.5rem;
-    margin: 0 15px 0 15px;
-    cursor: pointer;
+.social-media-icon {
+  height: 1.3rem;
+  margin: 0 15px 0 15px;
+  cursor: pointer;
 }
 
-.navbar-right:hover > .social-media-icon{
-    opacity: 0.4;
+.navbar-right:hover > .social-media-icon {
+  opacity: 0.4;
 }
 
 .navbar-right:hover > .social-media-icon:hover {
-    opacity: 1;
+  opacity: 1;
 }

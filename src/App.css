@@ -1,13 +1,12 @@
 .App {
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .App-header {
   height: 10vh;
   width: 100vw;
-  background-color: #000000;
   color: #ff527c;
-  z-index: 1;
 }
 
 .App-content {
@@ -28,5 +27,6 @@
 .App-footer {
   height: 10vh;
   width: 100vw;
-  background-color: rgb(19, 104, 179);
+  background-color: rgb(2, 71, 131);
+  color: greenyellow;
 }

@@ -12,7 +12,8 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="navbar-left">
         <div className="logo-container">
-          <span className="logo"><Link
+          <span className="logo">
+            <Link
               activeClass="active"
               to="home"
               spy={true}
@@ -20,7 +21,8 @@ const Navbar = () => {
               duration={500}
             >
               at
-            </Link></span>
+            </Link>
+          </span>
         </div>
         <div className="navbar-contents">
           <span className="navbar-list">
@@ -31,7 +33,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              PROJECTS
+              WORK
             </Link>
           </span>
           <span className="navbar-list">

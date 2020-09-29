@@ -1,0 +1,31 @@
+.about-about{
+  display: flex;
+  flex-direction: row;
+  color: #fff56c;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.akansha{
+  width: 35vw;
+}
+
+.about-container {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.hello {
+  color: #fff56c;
+  font-size: 12vh;
+  font-weight: 900;
+  
+}
+
+.about-content {
+  margin-right: 20px;
+  width: 60vw;
+  text-justify: inter-word;
+  font-size: 4vh;
+  text-align: justify;
+}

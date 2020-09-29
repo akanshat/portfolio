@@ -2,6 +2,8 @@ import React from "react";
 
 import Navbar from "./component/navbar/navbar";
 import Projects from "./component/projects/projects";
+import About from "./component/about/about";
+
 import { Element } from "react-scroll";
 import "./App.css";
 
@@ -12,20 +14,20 @@ function App() {
         <header className="App-header">
           <Navbar />
         </header>
-        <div className="App-content">CONTENT</div>
       </Element>
+      <div className="App-content">CONTENT</div>
 
       <div className="projects-component-container">
         <Element name="projects" className="element">
           <Projects />
         </Element>
       </div>
-      <div className="projects-container">
+      <div className="projects-component-container">
         <Element name="about" className="element">
-          ABOUT ME
+          <About />
         </Element>
       </div>
-      <div className="projects-container">
+      <div className="projects-component-container">
         <Element name="contact" className="element">
           CONTACT
         </Element>

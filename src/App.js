@@ -7,34 +7,43 @@ import Projects from "./components/projects/projects";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 
+import { Element, animateScroll as scroll } from "react-scroll";
+
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <Navbar />
-        </header>
-        <Switch>
+      <Switch>
+        <div className="App">
+          <header className="App-header">
+            <Navbar />
+          </header>
           <Route exact path="/">
-            <div className="App-content">
-              <Home />
-            </div>
-          </Route>
-          <Route exact path="/work">
-            <div className="projects-component-container">
-              <Projects />
-            </div>
-          </Route>
-          <Route exact path="/about">
-            <div className="about-component-container">
-              <About />
-            </div>
-          </Route>
-          <Route exact path="/contact">
-            <div className="contact-component-container">
-              <Contact />
+            <div className="page-content">
+              <Element name="home" className="element">
+                <div className="App-content">
+                  <Home />
+                </div>
+              </Element>
+              <Element name="work" className="element">
+                <div className="projects-component-container">
+                  <Projects />
+                </div>
+              </Element>
+              <Element name="about" className="element">
+                <div className="about-component-container">
+                  <About />
+                </div>
+              </Element>
+              <Element name="contact" className="element">
+                <div className="contact-component-container">
+                  <Contact />
+                </div>
+              </Element>
+              <div className="move-to-top" onClick={scroll.scrollToTop}>
+                MOVE TO TOP
+              </div>
             </div>
           </Route>
           <Route path="*">
@@ -42,8 +51,8 @@ function App() {
               <h1>404</h1>
             </div>
           </Route>
-        </Switch>
-      </div>
+        </div>
+      </Switch>
     </Router>
   );
 }

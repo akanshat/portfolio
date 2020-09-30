@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./navbar.css";
+
+import { Link } from "react-scroll";
 
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
@@ -10,19 +11,47 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar-left">
-        <div className="logo-container">
-          <Link to="/">
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          <div className="logo-container">
             <span className="logo">at</span>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="navbar-contents">
-          <Link to="/work">
+          <Link
+            activeClass="active"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
             <span className="navbar-list">WORK</span>
           </Link>
-          <Link to="/about">
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             <span className="navbar-list">ABOUT</span>
           </Link>
-          <Link to="/contact">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-140}
+            duration={500}
+          >
             <span className="navbar-list">CONTACT</span>
           </Link>
         </div>
@@ -30,16 +59,25 @@ const Navbar = () => {
       <div className="navbar-right">
         <a
           href="https://www.linkedin.com/in/akansha-tiwari-10/"
-          target="_blank" rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img className="social-media-icon" alt="linkedin" src={linkedin} />
         </a>
-        <a href="https://github.com/akanshat" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/akanshat"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="social-media-icon" alt="github" src={github} />
         </a>
-        <Link to="/a">
+        <a
+          href="https://github.com/akanshat"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className="social-media-icon" alt="whatsapp" src={whatsapp} />
-        </Link>
+        </a>
       </div>
     </div>
   );

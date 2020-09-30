@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.akansha {
-  width: 35vw;
-}
-
 .about-container {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -27,10 +23,10 @@
 
 .about-content {
   font-family: "Raleway", sans-serif;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 30px;
   margin-left: auto;
-  width: 60vw;
+  text-align: center;
+  width: 80vw;
   text-justify: inter-word;
   font-size: 4vh;
   text-align: justify;
@@ -65,7 +61,7 @@
   align-self: center;
 }
 
-.about-extra{
+.about-extra {
   display: flex;
   flex-direction: column;
   justify-content: center;

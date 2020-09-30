@@ -7,9 +7,8 @@ const About = () => {
   return (
     <div>
       <div className="about-about">
-        <div className="akansha">Akansha</div>
         <div className="about-container">
-          <div className="hello">HELLO!</div>
+          <div className="hello">ABOUT ME</div>
           <div className="about-content">
             My name is Akansha Tiwari, and I am a{" "}
             <span className="highlight">CS undergrad at IIIT Gwalior</span>.

@@ -4,7 +4,7 @@
   background-color: black;
 }
 
-.experience{
+.experience {
   margin-top: 50px;
   font-family: "Raleway", sans-serif;
   color: #fff56c;
@@ -139,4 +139,19 @@
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+.experience-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-content {
+  margin-top: 20px;
+  width: 70vw;
+  left: auto;
+  border: 1px solid white;
+  color: white;
 }

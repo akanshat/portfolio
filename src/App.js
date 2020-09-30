@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import Home from "./components/home/home";
 import Projects from "./components/projects/projects";
 import About from "./components/about/about";
+import Contact from "./components/contact/contact";
 
 import "./App.css";
 
@@ -32,7 +33,9 @@ function App() {
             </div>
           </Route>
           <Route exact path="/contact">
-            <div className="projects-component-container">CONTACT</div>
+            <div className="contact-component-container">
+              <Contact />
+            </div>
           </Route>
           <Route path="*">
             <div>

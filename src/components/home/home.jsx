@@ -1,14 +1,18 @@
 import React from "react";
 import "./home.css";
 
-import Cards from "../../components/tech/tech-cards";
-
 const Home = () => {
   return (
     <div className="home-container">
-      <div className="home-content">Home</div>
-      <div className="cards">
-        <Cards />
+      <div class="stars">
+        <div class="twinkling">
+          <div class="clouds">
+            <div className="home-content">
+              <h1 className="home-heading">Helloooooo</h1>
+            </div>
+            <div className="home-content"></div>
+          </div>
+        </div>
       </div>
     </div>
   );

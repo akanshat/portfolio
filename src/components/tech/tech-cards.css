@@ -3,15 +3,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0 40px 0 40px;
 }
 
 .image {
-  margin: 30px;
-  height: 8vh;
-  width: 4vw;
+  height: 40px;
+  width: 40px;
   align-self: center;
   background-color: rgb(255, 255, 255);
-  border-radius: 5px;
+  transition: 1s ease-in-out;
+  margin: 20px;
+}
+
+.image:hover {
+  transform: scale(1.2);
 }
 
 .cpp {
@@ -70,6 +75,17 @@
   background-color: #ca4245;
 }
 
-.redux{
-  background-color: #764ABC;
+.redux {
+  background-color: #764abc;
+}
+
+.cpp-text {
+  visibility: hidden;
+  color: #fff56c;
+  left: 0;
+
+}
+
+.cpp-div:hover >.cpp-text {
+  visibility: visible;
 }

@@ -1,0 +1,10 @@
+.contact-container {
+  background-color: black;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  color: #fff56c;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10vh;
+}

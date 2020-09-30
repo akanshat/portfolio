@@ -14,11 +14,14 @@ import node from "../../assets/node-dot-js.svg";
 import psql from "../../assets/postgresql.svg";
 import react from "../../assets/react.svg";
 import reactrouter from "../../assets/reactrouter.svg";
-import redux from "../../assets/redux.svg"
+import redux from "../../assets/redux.svg";
 const Cards = () => {
   return (
     <div className="tech-cards">
-      <img className="image cpp" alt="cpp" src={cpp} />
+      <div className="cpp-div">
+        <img className="image cpp" alt="cpp" src={cpp} />
+        <span className="cpp-text">C++</span>
+      </div>
       <img className="image css" alt="css" src={css} />
       <img className="image docker" alt="docker" src={docker} />
       <img className="image git" alt="git" src={git} />

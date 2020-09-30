@@ -1,5 +1,7 @@
 .about-about {
-  height: 90vh;
+  background-color: black;
+  height: auto;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   color: #fff56c;
@@ -20,15 +22,19 @@
   color: #fff56c;
   font-size: 12vh;
   font-weight: 900;
+  margin-top: 4vh;
 }
 
 .about-content {
+  font-family: "Raleway", sans-serif;
   margin-top: 20px;
   margin-right: 20px;
+  margin-left: auto;
   width: 60vw;
   text-justify: inter-word;
   font-size: 4vh;
   text-align: justify;
+  color: white;
 }
 
 .highlight {
@@ -37,4 +43,30 @@
 
 .highlight:hover {
   color: white;
+}
+
+.about-content2 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 100px;
+  margin-left: auto;
+  width: 60vw;
+  text-justify: inter-word;
+  font-size: 4vh;
+  text-align: justify;
+  color: #ff527c;
+}
+
+.about-content2:hover {
+  color: white;
+  letter-spacing: 0.1px;
+}
+.cards-div {
+  width: 60vw;
+  align-self: center;
+}
+
+.about-extra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -2,20 +2,13 @@
   width: 100vw;
   height: auto;
   background-color: black;
-}
-
-.experience {
-  margin-top: 50px;
-  font-family: "Raleway", sans-serif;
-  color: #fff56c;
-  font-size: 7vh;
-  font-weight: 900;
+  margin-left: -10vw;
 }
 
 .project-container h1 {
   font-family: "Raleway", sans-serif;
   color: #fff56c;
-  font-size: 7vh;
+  font-size: 5vh;
   font-weight: 900;
 }
 
@@ -34,7 +27,6 @@
   margin: 10px;
   width: 40vw;
   height: 40vh;
-  background: rgb(53, 53, 53);
   text-align: center;
   border-radius: 5px;
 }
@@ -139,19 +131,4 @@
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-}
-
-.experience-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.experience-content {
-  margin-top: 20px;
-  width: 70vw;
-  left: auto;
-  border: 1px solid white;
-  color: white;
 }

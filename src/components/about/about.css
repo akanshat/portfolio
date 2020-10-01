@@ -2,10 +2,18 @@
   background-color: black;
   height: auto;
   width: 100vw;
+  margin-top: 5vh;
   display: flex;
   flex-direction: row;
   color: #fff56c;
   justify-content: space-around;
+  align-items: center;
+}
+
+.wrap-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,19 +24,16 @@
 
 .hello {
   color: #fff56c;
-  font-size: 12vh;
+  font-size: 5vh;
   font-weight: 900;
-  margin-top: 4vh;
+  margin-top: 5vh;
 }
 
 .about-content {
   font-family: "Raleway", sans-serif;
   margin-top: 30px;
-  margin-left: auto;
-  text-align: center;
   width: 80vw;
-  text-justify: inter-word;
-  font-size: 4vh;
+  font-size: 3vh;
   text-align: justify;
   color: white;
 }
@@ -41,28 +46,28 @@
   color: white;
 }
 
-.about-content2 {
-  font-family: "Raleway", sans-serif;
-  margin-top: 100px;
-  margin-left: auto;
-  width: 60vw;
-  text-justify: inter-word;
-  font-size: 4vh;
-  text-align: justify;
-  color: #ff527c;
-}
-
-.about-content2:hover {
-  color: white;
-  letter-spacing: 0.1px;
-}
-.cards-div {
-  width: 60vw;
-  align-self: center;
-}
-
-.about-extra {
+.ul-list {
+  color: #ffffff;
+  font-size: 2.5vh;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+}
+
+ul {
+  display: inline;
+  list-style-type: square;
+  list-style-image: url("../../assets/arrow2.png");
+  margin: 4vh 3vw 0 3vw;
+  overflow: hidden;
+  text-align: left;
+}
+
+li {
+  padding-right: 0.6em;
+  margin-top: 10px;
+}
+
+li:hover{
+  color: #ff527c;
 }

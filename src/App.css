@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: "Raleway", sans-serif;
+  background-color: black;
 }
 
 .App-header {
@@ -34,7 +35,7 @@
 
 .contact-component-container {
   background-color: #000000;
-  height: 100vh;
+  height: 90vh;
 }
 
 .move-to-top {
@@ -51,4 +52,10 @@
   background-color: #ff527c;
   font-weight: 900;
   cursor: pointer;
+}
+
+.not-found-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }

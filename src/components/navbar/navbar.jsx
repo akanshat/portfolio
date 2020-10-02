@@ -1,6 +1,5 @@
 import React from "react";
 import "./navbar.css";
-import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 import github from "../../assets/github.png";
@@ -10,54 +9,52 @@ import whatsapp from "../../assets/whatsapp.png";
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <RouterLink to="/">
-        <div className="navbar-left">
+      <div className="navbar-left">
+        <Link
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          <div className="logo-container">
+            <span className="logo">at</span>
+          </div>
+        </Link>
+        <div className="navbar-contents">
           <Link
             activeClass="active"
-            to="home"
+            to="work"
             spy={true}
             smooth={true}
             offset={-80}
             duration={500}
           >
-            <div className="logo-container">
-              <span className="logo">at</span>
-            </div>
+            <span className="navbar-list">WORK</span>
           </Link>
-          <div className="navbar-contents">
-            <Link
-              activeClass="active"
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-            >
-              <span className="navbar-list">WORK</span>
-            </Link>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              <span className="navbar-list">ABOUT</span>
-            </Link>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-140}
-              duration={500}
-            >
-              <span className="navbar-list">CONTACT</span>
-            </Link>
-          </div>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            <span className="navbar-list">ABOUT</span>
+          </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-140}
+            duration={500}
+          >
+            <span className="navbar-list">CONTACT</span>
+          </Link>
         </div>
-      </RouterLink>
+      </div>
       <div className="navbar-right">
         <a
           href="https://www.linkedin.com/in/akansha-tiwari-10/"

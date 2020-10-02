@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 10vh;
+}
+
+.text-404 {
+  color: rgb(255, 255, 255);
+  text-shadow: -4px 4px 20px #ff527c
+}
+
+.back-home {
+  font-size: 3vh;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  border-bottom: 3px solid white;
+  text-transform: uppercase;
+}
+
+.back-home:hover {
+  color: #ff527c;
+  cursor: pointer;
+  border-bottom: 3px solid #ff527c;
+}

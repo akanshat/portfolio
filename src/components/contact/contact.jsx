@@ -21,6 +21,7 @@ class Contact extends React.Component {
               ref={(textarea) => (this.textArea = textarea)}
               value="akanshat1999@gmail.com"
               spellCheck="false"
+              readOnly
             ></textarea>
             <div
               className="copy-container"
